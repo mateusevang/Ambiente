@@ -1,0 +1,373 @@
+<html lang="pt-br">
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trabalho de DP1</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #0b3d2e, #2ecc71);
+            color: #fff;
+        }
+
+        h1 {
+            color: white;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        span {
+            color: #50caa3;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(77, 236, 119);
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        p {
+            font-size: 25px;
+            color: white;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        pre {
+            font-size: 25px;
+            color: white;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+        }
+
+        img {
+            border: 5px solid rgb(70, 152, 70);
+            display: block;
+            margin:auto;
+            flex-wrap: nowrap;
+        }
+
+        
+        header {
+            background: linear-gradient(to right, #0b3d2e, #145c3a);
+            padding: 15px 40px;
+            position: sticky;
+            top: 0;
+            border-bottom: 3px solid #2ecc71;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #a8ffb0;
+        }
+
+        section {
+            padding: 50px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.4);
+            margin-top: 50px;
+        }
+                /* Cards das Adversidades */
+        .adversidades {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card {
+            padding: 22px 30px;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            min-width: 170px;
+            font-size: 17px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .fogo { background-color: #e74c3c; }
+        .desmatamento { background-color: #f39c12; }
+        .poluicao { background-color: #3498db; }
+        .clima { background-color: #e67e22; }
+        .biodiversidade { background-color: #8e44ad; }
+
+        .ONGs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card1 {
+            padding: 22px 30px;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            min-width: 170px;
+            font-size: 17px;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card1:hover {
+            transform: translateY(-10px);
+        }
+
+        .SosMataAtlantica {background-color: #145c3a;}
+        .GreenPeaceBrasil {background-color: #145c3a;}
+        .WWWFBrasil {background-color:#145c3a;}
+        .IPAMAmazonia {background-color: #145c3a ;}
+        .Funbio{ background-color: #145c3a;}
+        .InstitutoCentroDeVida { background-color: #145c3a;}
+
+ul li{
+    
+    list-style: none;
+    display: flex;
+    margin: 0 25px;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+ul:hover li a{
+    opacity: 0.3;
+    transform: scale(1.2);
+
+}
+
+ul li a:hover{
+    opacity: 1;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#Home">
+                <font color="#FFFFFF">Home</font>
+            </a>
+            <a href="#Importancia">
+                <font color="#FFFFFF">Educação Ambiental</font>
+            </a>
+            <a href="#Importante">
+                <font color="#FFFFFF">Sustentabilidade</font>
+            </a>
+            <a href="#escolas">
+                <font color="#FFFFFF">Sobre</font>
+            </a>
+            <a href="#saiba">
+                <font color="#FFFFFF">Saiba mais</font>
+            </a>
+            <a href="#ONGs"><font color="FFFFFF">ONGs</font></a>
+        </nav>
+    </header>
+
+    <h1 id="Home">EDUCAÇÃO <span>AMBIENTAL</span></h1>
+    <p>A Educação Ambiental representa um conjunto de ações sustentáveis voltadas para a conservação do meio ambiente.
+
+
+        Dada sua importância, no dia 3 de junho é comemorado o Dia Nacional da Educação Ambiental.</p>
+
+    <h2 id="Importancia">Objetivos da educação ambiental</h2>
+
+    <img src="/imagens/ChatGPT Image 12 de mai. de 2026, 10_53_56.png" width="50%" height="75%" >
+
+    <p>A educação ambiental objetiva a compreensão dos conceitos relacionados com o meio ambiente, sustentabilidade,
+        preservação e conservação.
+
+        Sendo assim, ela busca a formação de cidadãos conscientes e críticos, fortalecendo práticas cidadãs.
+
+        Educação ambiental
+
+        Aliado a isso, trabalha com a inter-relação entre o ser humano e o meio ambiente, desenvolvendo um espírito
+        cooperativo e comprometido com o futuro do planeta</p>
+    <p>A educação ambiental visa desenvolver uma consciência crítica sobre a relação ser humano-natureza, promovendo
+        valores, conhecimentos e atitudes para a preservação ambiental e sustentabilidade. Seus principais objetivos
+        incluem conscientizar sobre problemas ambientais, incentivar a conservação de recursos naturais e capacitar
+        indivíduos para agirem ativamente na solução de questões locais e globais.
+        Principais Objetivos da Educação Ambiental:
+        Conscientização e Sensibilização: Estimular a sensibilidade sobre a fragilidade dos ecossistemas e as
+        consequências da ação humana.
+        Construção de Conhecimentos: Oferecer informações sobre biodiversidade, funcionamento da natureza, mudanças
+        climáticas e recursos naturais.
+        Mudança de Atitudes e Valores: Desenvolver uma ética de respeito, responsabilidade e cuidado com o meio
+        ambiente.
+        Ação e Participação: Capacitar os indivíduos a participar na identificação e solução de problemas ambientais,
+        adotando práticas sustentáveis no dia a dia.
+        Pensamento Crítico: Avaliar de forma crítica as relações de produção e consumo, focando na sustentabilidade e na
+        justiça social.
+        Educação Permanente: Garantir que o tema esteja presente em todos os níveis e modalidades de ensino (formal e
+        não formal).
+
+        A Política Nacional de Educação Ambiental (PNEA) no Brasil, conforme a Lei 9.795/1999, reforça que o objetivo é
+        a construção de um entendimento integrado do ambiente, abrangendo aspectos sociais, econômicos, científicos e
+        culturais.
+    </p>
+
+    <h2 id="Importante">Sustentabilidade</h2>
+
+    <img src="/imagens/WhatsApp Image 2026-05-12 at 10.58.55.jpeg" width="50%" height="75%" >
+
+    <p>Ao lado de seus princípios e objetivos, a grande importância da educação ambiental reside na atuação consciente
+        dos cidadãos. Ela visa, portanto, o aumento de práticas sustentáveis bem como a redução de danos ambientais.
+
+        Sendo assim, ela promove a mudança de comportamentos tidos como nocivos tanto para o ambiente, como para a
+        sociedade.
+
+        No ambiente escolar, ela possui grande importância visto que desde cedo as crianças aprendem a lidar com o
+        desenvolvimento sustentável.
+
+        Com o crescimento e aprofundamento desses temas na atualidade, diversos cursos de graduação e pós-graduação
+        foram criados nessa área de conhecimento.</p>
+
+    <p>Ela promove práticas sustentáveis, reduz impactos negativos como a poluição e a perda de biodiversidade, e
+        incentiva a preservação dos recursos naturais para gerações futuras.
+        Principais Pontos da Importância da Educação Ambiental:
+        Conscientização e Mudança de Hábito: Desenvolve valores de responsabilidade e respeito, capacitando as pessoas a
+        tomarem decisões informadas sobre consumo e uso de recursos.
+        Enfrentamento de Desafios Globais: É uma ferramenta crucial no combate às mudanças climáticas, aumentando a
+        compreensão sobre os impactos humanos e promovendo medidas de mitigação.
+        Educação nas Escolas: Incorporada como tema transversal, a educação ambiental nas escolas estimula a criação de
+        projetos práticos como hortas e compostagem, formando jovens engajados.
+        Transformação Comunitária: Fortalece o vínculo com a natureza e o senso de pertencimento, incentivando a
+        comunidade a proteger espaços locais como praças e rios.</p>
+
+    <h2 id="escolas">A educação ambiental nas escolas</h2>
+
+
+    <img src="/imagens/WhatsApp Image 2026-05-12 at 10.55.10.jpeg" width="50%" height="75%" >
+
+    <p>Articulada com as disciplinas obrigatórias do currículo escolar, a educação ambiental tem sido cada vez mais
+        abordada no espaço escolar.
+
+        A disciplina transversal meio ambiente está intimamente relacionada com o conceito de educação ambiental.
+
+        Nessa perspectiva, o aluno é preparado para conhecer temas relacionados com a área ambiental, com o intuito de
+        tornar-se um cidadão consciente de suas práticas.
+
+        Educação ambiental nas escolas
+
+        Com isso, ela objetiva a formação de valores e atitudes criadas sob o enfoque da sustentabilidade.
+
+
+        Destacam-se temas como o consumo, recursos naturais, crise ambiental, efeito estufa, tipos de lixo, coleta
+        seletiva, reciclagem, dentre outros.</p>
+    <p>Ela visa, além de transmitir conhecimentos sobre o meio ambiente, desenvolver novos valores, atitudes e práticas
+        sustentáveis, integrando questões sociais e ambientais no currículo da educação básica.
+        Principais Aspectos e Abordagens:
+        Transversalidade: A educação ambiental deve superar disciplinas isoladas, perpassando todo o currículo escolar.
+        Abordagens Complementares: O Suzano Blog destaca quatro abordagens principais:
+        Sobre o ambiente: Foco no conhecimento teórico.
+        Para o ambiente: Foco na gestão e conservação.
+        No meio ambiente: Educação ao ar livre e contato direto.
+        A partir do meio ambiente: Educação baseada na realidade local.
+        Ações Práticas: Projetos como hortas escolares, compostagem, e coleta seletiva (como o exemplo do projeto
+        Crianças de Horta) são eficazes para vivenciar a sustentabilidade.
+        Papel da Escola e Educadores: A escola é um espaço de sensibilização, enquanto</p>
+
+    <section id="saiba" style="background-color: rgba(255, 255, 255, 0.2);">
+        <h2>Principais Adversidades no Brasil</h2>
+
+        <ul>
+            <li>
+            <div class="adversidades">
+            <div class="card fogo"><a href="https://www.todamateria.com.br/queimadas/">
+                    <font color="#FFFFFF"> Fogo e Queimadas</font>
+                </a></div>
+            <div class="card desmatamento"><a href="https://brasilescola.uol.com.br/geografia/o-desmatamento.htm">
+                    <font color="#FFFFFF"> Desmatamento</font>
+                </a></div>
+            <div class="card poluicao"><a href="https://altb.org.br/contaminacao/?gad_source=1&gad_campaignid=22289073053&gbraid=0AAAAA-1lrAeX7AzIH_R2rVpyaOykqHCsC&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9x1I-b4Ipu17zmGZzOk0pI0S7v0quu38MfPqxzmXilMZoo3LIEbbSYaArvdEALw_wcB">
+                    <font color="#FFFFFF"> Poluição dos Rios</font>
+                </a></div>
+            <div class="card clima"><a
+                    href="https://sitawi.net/mudancas-climaticas/?gad_source=1&gad_campaignid=23756661966&gbraid=0AAAAADw9cMV84Znf1hRkFOOYGGMkvqwTc&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9y3Rin3ajZFx2YeFWo-tjcGeOvUpeOmiKpWk2SYqOxJNluKrH9EtIcaArL4EALw_wcB">
+                    <font color="#FFFFFF">Mudanças Climáticas</font>
+                </a></div>
+            <div class="card biodiversidade"><a href="https://www.todamateria.com.br/biodiversidade/">
+                    <font color="#FFFFFF">  Perda de Biodiversidade</font>
+                </a> </div>
+             </li>
+            </ul>
+ 
+        </div>
+    </section>
+    <div style=" display: flex; justify-content: center">
+    <img src="imagens/problemas ambientais.jpeg" width="70%" height="40%">
+    </div>
+    
+    <h1>Principais ONGs do <span>Brasil</span></h1>
+    <section id="ONGs" style="background-color: rgba(255, 255, 255, 0.2);">
+
+    <ul>
+            <li>
+            <div class="Principais ONGs">
+            <div class="card InstitutoCentroDeVida"><a href="https://www.icv.org.br/">
+                    <font color="#FFFFFF">Instituto Centro De Vida</font>
+                </a></div>
+            <div class="card SosMataAtlantica"><a href="https://www.sosma.org.br/">
+                    <font color="#FFFFFF">Sos Mata Atlantica</font>
+                </a></div>
+            <div class="card Funbio"><a href="https://www.funbio.org.br/">
+                    <font color="#FFFFFF">Funbio</font>
+                </a></div>
+            <div class="card GreenPeaceBrasil"><a
+                    href="https://www.greenpeace.org/brasil/">
+                    <font color="#FFFFFF">Green Peace Brasil</font>
+                </a></div>
+            <div class="card IPAMAmazonia"><a href="https://ipam.org.br/">
+                    <font color="#FFFFFF"> Ipam Amazonia</font>
+                </a> </div></li>
+            </ul>
+            </section>
+    
+     <footer>
+        <p>&copy; 2026 - Trabalho de DP1 | Mateus/Lucas/João H./João P/Abraâo | Ciência da Computação</p>
+    </footer>
+
+</body>
